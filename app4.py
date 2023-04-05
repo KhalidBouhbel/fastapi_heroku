@@ -81,17 +81,10 @@ def predict_target(input : LoanID):
         inp8 = x[7]
         result = classifier.predict_proba([[inp2,inp3,inp4,inp5,inp6,inp7,inp8]])[0]
         
-        #features = data.drop(['SK_ID_CURR'], axis=1).columns
-        
-        
-        
-        
-        
+          
         return {
             result[1]
-            
-            
-            }
+        }
         
              
     else:
