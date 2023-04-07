@@ -54,7 +54,7 @@ class LoanID(BaseModel):
 
         
 app = FastAPI()
-classifier = pickle.load(open("RFClassifier3.pkl", 'rb'))
+classifier = pickle.load(open("DummyClassifier.pkl", 'rb'))
 #classifier = joblib.load(open('RFClassifier3.joblib', 'rb'))
 #classifier = pickle.loads(gzip.open("RFClassifier3.pkl","rb").read())
 #classifier = pickle.loads(gzip.open("RFClassifier3.pkl.gz","rb").read())
